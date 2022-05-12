@@ -8,7 +8,7 @@ import { ServersService } from './servers.service';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
-  public servers: {id: number, name: string, status: string}[] = [];
+  private servers: {id: number, name: string, status: string}[] = [];
 
   constructor(private serversService: ServersService,
               private router: Router,
